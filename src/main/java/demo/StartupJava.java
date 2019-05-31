@@ -7,7 +7,10 @@ import java.util.Set;
 
 public class StartupJava {
 
-    public static void main(String[] args) {
+  private StartupJava() {
+  }
+
+  public static void main(String[] args) {
       new CoreUIJavaService() {
         @Override
         public Set<Class<?>> setOfRouteAnnotatedClasses() {
